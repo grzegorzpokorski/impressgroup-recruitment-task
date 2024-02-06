@@ -28,7 +28,10 @@ export default {
         17.5: "70px",
       },
       borderRadius: {
-        box: "10px",
+        10: "10px",
+      },
+      borderWidth: {
+        3: "3px",
       },
       boxShadow: {
         box: "0px 0px 15px rgba(var(--orange-2), 0.52)",

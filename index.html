@@ -4,9 +4,120 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grzegorz Pokorski - impressgroup recruitment task</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <main></main>
+  <body class="bg-white text-gray1">
+    <main>
+      <section
+        class="w-full mx-auto px-3 max-w-screen-2xl py-16 flex flex-col gap-16"
+        aria-describedby="dlaczego-warto-wybrac-nas"
+      >
+        <header class="text-center flex flex-col gap-3">
+          <h2 id="dlaczego-warto-wybrac-nas" class="text-4xl">
+            Dlaczego warto wybrać Terminal od nas?
+          </h2>
+          <p class="text-lg">
+            Program dla
+            <span class="text-orange1 font-light">nowych</span> klientów
+          </p>
+        </header>
+        <ul
+          class="list-none grid gap-4 md:gap-8 lg:gap-10 xl:gap-17.5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
+          role="list"
+        >
+          <li
+            class="text-center flex flex-col gap-6 p-7 shadow-box rounded-10 shadow-black/20 hover:shadow-orange2/50 box-item"
+          >
+            <picture class="h-32">
+              <img src="/device.svg" alt="" class="mx-auto max-h-32 h-full" />
+            </picture>
+            <h3 class="text-2xl/[1.2] text-white font-light">
+              <span class="mark-text">0 zł za urządzenie przez rok</span>
+            </h3>
+            <p class="text-xs font-light">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </li>
+          <li
+            class="text-center flex flex-col gap-6 p-7 shadow-box rounded-10 shadow-black/20 hover:shadow-orange2/50 box-item"
+          >
+            <picture class="h-32">
+              <img
+                src="/credit-card.svg"
+                alt=""
+                class="mx-auto max-h-32 max-w-32 h-full"
+              />
+            </picture>
+            <h3 class="text-2xl/[1.2] text-white font-light">
+              <span class="mark-text">0 zł prowizji od transakcji</span>
+            </h3>
+            <p class="text-xs font-light">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </li>
+          <li
+            class="text-center flex flex-col gap-6 p-7 shadow-box rounded-10 shadow-black/20 hover:shadow-orange2/50 box-item"
+          >
+            <picture class="h-32">
+              <img
+                src="/paper-and-pencil.svg"
+                alt=""
+                class="mx-auto max-h-32 max-w-32 h-full"
+              />
+            </picture>
+            <h3 class="text-2xl/[1.2] text-white font-light">
+              <span class="mark-text">Umowa na 12 miesięcy bez zobowiązań</span>
+            </h3>
+            <p class="text-xs font-light">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </li>
+          <li
+            class="text-center flex flex-col gap-6 p-7 shadow-box rounded-10 shadow-black/20 hover:shadow-orange2/50 box-item"
+          >
+            <picture class="h-32">
+              <img
+                src="/gift-box.svg"
+                alt=""
+                class="mx-auto max-h-32 max-w-32 h-full"
+              />
+            </picture>
+            <h3 class="text-2xl/[1.2] text-white font-light">
+              <span class="mark-text">Dodatkowa premia 100 zł</span>
+            </h3>
+            <p class="text-xs font-light">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </li>
+        </ul>
+        <footer class="flex flex-col items-center text-center">
+          <a
+            href="#"
+            class="flex flex-row gap-x-4 items-center text-orange2 bg-transparent border-orange2 border-3 uppercase py-2 rounded-10 divide-orange2/80 divide-x px-4 hover:bg-orange2 hover:text-white focus:text-white hover:divide-white focus:divide-white"
+          >
+            <span>Pobierz regulamin</span>
+            <img src="/picture_as_pdf.svg" alt="" class="pl-4" />
+          </a>
+        </footer>
+      </section>
+    </main>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
