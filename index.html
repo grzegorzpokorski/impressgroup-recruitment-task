@@ -117,7 +117,38 @@
           </a>
         </footer>
       </section>
+      <section class="relative flex flex-col" aria-describedby="faq-title">
+        <header class="text-center flex flex-col gap-3 w-full px-6 pb-20">
+          <h2 id="faq-title" class="text-4xl">Najczęściej zadawane pytania</h2>
+        </header>
+        <div class="bg-orange2 faq-bg">
+          <div class="max-w-7xl w-full mx-auto px-3 relative z-[2]">
+            <div
+              class="grid grid-cols-1 xl:grid-cols-2 gap-24 relative text-white"
+            >
+              <div class="flex flex-col py-16">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non
+                  quibusdam rerum pariatur cum consectetur? Cupiditate,
+                  doloremque dolores ipsam sed, asperiores doloribus placeat
+                  necessitatibus esse labore, molestias harum dolore maiores
+                  numquam.
+                </p>
+              </div>
+              <picture class="hidden xl:flex relative">
+                <img
+                  alt="woman"
+                  loading="lazy"
+                  class="absolute bottom-0 right-1/2 translate-x-1/2 max-h-[calc(100%+100px)]"
+                  src="/woman-large.png"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer class="bg-gray3 h-20"></footer>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
