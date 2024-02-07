@@ -4,23 +4,13 @@
 
 :root {
   --orange-1: 243 147 35;
-  /* --orange-1: #f39323; */
   --orange-2: 243 146 34;
-  /* --orange-2: #f39222; */
-  /* --orange-3: rgba(243 146 34 0.58; */
-  /* --orange-3: #f3922294; */
   --yellow: 253 211 4;
-  /* --yellow: #fdd304; */
   --gray-1: 153 153 153;
-  /* --gray-1: #999999; */
   --gray-2: 195 195 195;
-  /* --gray-2: #c3c3c3; */
   --gray-3: 35 31 32;
-  /* --gray-3: #231f20; */
   --gray-4: 0 0 0 0.149;
-  /* --gray-4: #00000026; */
   --gray-5: 60, 60, 60;
-  /* --gray-5: #3c3c3c; */
 }
 
 .mark-text {
@@ -79,4 +69,11 @@
     transform: skewY(-3deg);
     z-index: -1;
   }
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 0;
+  row-gap: 1.5rem;
 }
