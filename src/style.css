@@ -4,23 +4,13 @@
 
 :root {
   --orange-1: 243 147 35;
-  /* --orange-1: #f39323; */
   --orange-2: 243 146 34;
-  /* --orange-2: #f39222; */
-  /* --orange-3: rgba(243 146 34 0.58; */
-  /* --orange-3: #f3922294; */
   --yellow: 253 211 4;
-  /* --yellow: #fdd304; */
   --gray-1: 153 153 153;
-  /* --gray-1: #999999; */
   --gray-2: 195 195 195;
-  /* --gray-2: #c3c3c3; */
   --gray-3: 35 31 32;
-  /* --gray-3: #231f20; */
   --gray-4: 0 0 0 0.149;
-  /* --gray-4: #00000026; */
   --gray-5: 60, 60, 60;
-  /* --gray-5: #3c3c3c; */
 }
 
 .mark-text {
@@ -78,5 +68,99 @@
     transform-origin: top left;
     transform: skewY(-3deg);
     z-index: -1;
+  }
+}
+
+:root {
+  --transitionLength: 0.4s;
+  --transitionTiming: ease;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  row-gap: 0.75rem;
+
+  &__item {
+    outline: 0.1875rem solid white;
+    border-radius: 0.625rem;
+    overflow: hidden;
+  }
+
+  &__title {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 1rem 0.75rem 3.25rem;
+    color: rgb(var(--orange-2));
+    background-color: white;
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    border-bottom-left-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+    list-style: none;
+
+    &::before {
+      content: "+";
+      position: absolute;
+      top: 50%;
+      left: 1rem;
+      transform: translateY(-50%);
+      width: 1.25rem;
+      height: 1.25rem;
+      background-color: rgb(var(--orange-2));
+      color: white;
+      text-align: center;
+      border-radius: 100vw;
+      line-height: 1.25rem;
+    }
+  }
+
+  &__content {
+    overflow: hidden;
+    display: grid;
+    animation-duration: 0.5s;
+    padding: 1rem;
+
+    &--animation {
+      animation-name: accordion-expand;
+      animation-timing-function: ease-out;
+    }
+
+    &--collapsing {
+      animation-name: accordion-expand;
+      animation-direction: reverse;
+      animation-timing-function: ease-in;
+    }
+
+    &--active {
+      grid-template-rows: 1fr;
+    }
+  }
+
+  &__content-inner {
+    min-height: 0;
+  }
+}
+
+.accordion > .accordion__item[open] > .accordion__title::before {
+  content: "-";
+}
+
+@keyframes accordion-expand {
+  0% {
+    grid-template-rows: 0fr;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  100% {
+    grid-template-rows: 1fr;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 }
