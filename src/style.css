@@ -124,7 +124,7 @@
   &__content {
     overflow: hidden;
     display: grid;
-    animation-duration: 0.5s;
+    animation-duration: 0.2s;
     padding: 1rem;
 
     &--animation {
